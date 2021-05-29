@@ -11,6 +11,8 @@ This decorator won't really work if the script continually runs without exiting.
 ## Installation
 `pip install --user git+https://github.com/zznixt07/periodicity.git`
 
+## Usage
+
 ```
 from periodicity import every, every_specific
 
