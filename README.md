@@ -15,6 +15,7 @@ def expensive_af():
     pass
 
 # run below func at the 15th of every month and then every 4 days until end of month
+@every_specific(day_of_month=15, repeat_every_days=4)
 def dodgy_fn():
     pass 
 
