@@ -8,6 +8,9 @@ only executes once every hour.
 This decorator won't really work if the script continually runs without exiting. 
 
 
+## Installation
+`pip install --user git+https://github.com/zznixt07/periodicity.git`
+
 ```
 from periodicity import every, every_specific
 
