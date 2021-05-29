@@ -1,7 +1,13 @@
 ## limit execution of expensive function once every day or once every month.
 For use in pythonanywhere.com where there is limited CPU time.
 
-Assume the below script runs every 40 minutes
+Note:
+> the below script must run as frequently as the smallest unit of time in the
+decorator func. A func wont run every 10 minute if the script containing it
+only executes once every hour.
+This decorator won't really work if the script continually runs without exiting. 
+
+
 ```
 from periodicity import every, every_specific
 
